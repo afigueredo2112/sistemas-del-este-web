@@ -1,0 +1,166 @@
+/* Visual polish experiment — branch design/v031-visual-polish
+   Purpose: improve hierarchy, depth and scanability without changing the approved content. */
+
+:root{
+  --glass:rgba(6,25,34,.58);
+  --glass-strong:rgba(6,25,34,.78);
+  --glass-border:rgba(255,255,255,.16);
+  --soft-shadow:0 24px 70px rgba(0,0,0,.28);
+}
+
+/* Header / brand ---------------------------------------------------------- */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(6,25,34,.78);
+  backdrop-filter:blur(18px) saturate(125%);
+  -webkit-backdrop-filter:blur(18px) saturate(125%);
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+.brand-lockup{display:flex;align-items:center;gap:11px;min-width:190px}
+.brand-emblem{width:44px;height:44px;object-fit:contain;display:block;flex:0 0 auto;filter:drop-shadow(0 6px 16px rgba(0,0,0,.28))}
+.brand-wordmark{gap:2px}
+.brand-top{font-size:18px;letter-spacing:1.6px}
+.brand-bottom{font-size:15px;letter-spacing:1.8px}
+.header-contact{background:rgba(255,255,255,.05);transition:.2s ease}
+.header-contact:hover{background:rgba(255,255,255,.10);transform:translateY(-1px)}
+
+/* More deliberate button feedback ---------------------------------------- */
+.primary{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.24);filter:saturate(1.08)}
+.text-link{position:relative}
+.text-link:after{content:'';position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:currentColor;transition:right .2s ease}
+.text-link:hover:after{right:0}
+
+/* Agro hero: real field imagery + selective glass ------------------------ */
+.agro-hero{padding-top:62px}
+.agro-landscape{
+  isolation:isolate;
+  border-radius:24px;
+  min-height:520px;
+  background:
+    linear-gradient(180deg,rgba(3,18,24,.10) 0%,rgba(3,18,24,.22) 45%,rgba(3,18,24,.72) 100%),
+    url('https://images.unsplash.com/photo-1777063012816-35f5bcbe4e09?auto=format&fit=crop&fm=jpg&q=82&w=1800') center/cover no-repeat;
+  box-shadow:var(--soft-shadow);
+  border:1px solid rgba(255,255,255,.12);
+}
+.agro-landscape:after{
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(120deg,rgba(6,25,34,.16),transparent 45%,rgba(131,201,59,.06));
+  pointer-events:none;
+}
+.agro-landscape .sun-orb,.agro-landscape .far-hill,.agro-landscape .near-field,.agro-landscape .farm-house,.agro-landscape .water-tank,.agro-landscape .crop-lines{display:none}
+.visual-label{
+  z-index:6;
+  width:min(330px,calc(100% - 50px));
+  padding:18px 19px;
+  border:1px solid var(--glass-border);
+  border-radius:16px;
+  background:var(--glass);
+  backdrop-filter:blur(16px) saturate(120%);
+  -webkit-backdrop-filter:blur(16px) saturate(120%);
+  box-shadow:0 16px 40px rgba(0,0,0,.18);
+}
+.visual-label small{color:#c8d5d7}
+.visual-label strong{font-size:18px}
+.agro-landscape .node{
+  z-index:7;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid rgba(255,255,255,.20);
+  background:rgba(4,25,31,.72);
+  backdrop-filter:blur(11px);
+  -webkit-backdrop-filter:blur(11px);
+  box-shadow:0 12px 28px rgba(0,0,0,.20);
+  color:#f6fbf4;
+  padding:9px 12px;
+}
+.agro-landscape .node:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(131,201,59,.14)}
+.agro-landscape .n1{left:8%;top:auto;bottom:9%}
+.agro-landscape .n2{right:8%;top:35%}
+.agro-landscape .n3{left:45%;bottom:18%}
+.agro-landscape .n4{right:9%;bottom:8%}
+
+/* Editorial statement with subtle atmosphere ----------------------------- */
+.statement{position:relative}
+.statement:before{content:'';position:absolute;width:320px;height:320px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(131,201,59,.08),transparent 68%);filter:blur(4px);pointer-events:none}
+.statement>*{position:relative}
+
+/* Service list: icon-led scanning, not another card grid ------------------ */
+.service-list article{grid-template-columns:64px 1fr 1.2fr 30px;position:relative;overflow:hidden}
+.service-list article:after{content:'';position:absolute;inset:auto 0 0 0;height:1px;background:linear-gradient(90deg,var(--green),transparent);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.service-list article:hover:after{transform:scaleX(1)}
+.service-list article>span{
+  width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  border:1px solid rgba(131,201,59,.22);background:rgba(131,201,59,.07);font-size:0;color:var(--green)
+}
+.service-list article>span:before{font-size:18px;line-height:1;font-family:'Manrope',sans-serif;font-weight:700}
+.service-list article:nth-child(1)>span:before{content:'≈'}
+.service-list article:nth-child(2)>span:before{content:'▰'}
+.service-list article:nth-child(3)>span:before{content:'◉'}
+.service-list article:nth-child(4)>span:before{content:'⌁'}
+.service-list article:nth-child(5)>span:before{content:'◇'}
+.service-list article:nth-child(6)>span:before{content:'✦'}
+.service-list h3{transition:color .2s ease}
+.service-list article:hover h3{color:var(--green-soft)}
+
+/* How we work: stronger progression -------------------------------------- */
+.steps{counter-reset:steps}
+.steps article{position:relative}
+.steps article:before{content:'';position:absolute;top:-1px;left:0;width:34%;height:2px;background:var(--green);opacity:.55}
+.steps h3{letter-spacing:-.4px}
+
+/* Mi Campo: make the concept feel like a product, without claiming it is one */
+.micampo{position:relative}
+.micampo:before{content:'';position:absolute;left:4%;top:14%;width:340px;height:340px;background:radial-gradient(circle,rgba(40,167,232,.11),transparent 67%);pointer-events:none}
+.phone{position:relative;z-index:2;transform:rotate(-1.8deg);transition:transform .28s ease,box-shadow .28s ease}
+.phone:hover{transform:rotate(0deg) translateY(-4px);box-shadow:0 36px 90px rgba(0,0,0,.42)}
+.phone-card,.phone-row>div{box-shadow:0 7px 20px rgba(16,37,43,.05)}
+
+/* Benefits: icon-like numeric marks and less boxy composition ------------ */
+.benefit-grid article{position:relative;transition:background .2s ease}
+.benefit-grid article:hover{background:rgba(255,255,255,.025)}
+.benefit-grid strong{display:grid;width:40px;height:40px;place-items:center;border-radius:50%;border:1px solid rgba(131,201,59,.25);background:rgba(131,201,59,.06)}
+
+/* Real-problem cases: visual shorthand ----------------------------------- */
+.case-grid article{position:relative;overflow:hidden;transition:transform .2s ease,border-color .2s ease;background:linear-gradient(145deg,#08212b,#071d26)}
+.case-grid article:hover{transform:translateY(-3px);border-color:rgba(131,201,59,.30)}
+.case-grid article:before{position:absolute;right:24px;top:20px;font-size:26px;color:rgba(131,201,59,.45);font-family:'Manrope',sans-serif}
+.case-grid article:nth-child(1):before{content:'↝'}
+.case-grid article:nth-child(2):before{content:'▰'}
+.case-grid article:nth-child(3):before{content:'≈'}
+.case-grid article:nth-child(4):before{content:'☼'}
+
+/* Make the CTA feel intentional rather than like another section ---------- */
+.agro-cta{position:relative;overflow:hidden;background:linear-gradient(115deg,#83c93b,#a9d765)}
+.agro-cta:after{content:'';position:absolute;width:520px;height:520px;border:1px solid rgba(7,26,34,.12);border-radius:50%;right:-180px;top:-210px;box-shadow:0 0 0 65px rgba(7,26,34,.035),0 0 0 130px rgba(7,26,34,.025)}
+.agro-cta .shell{position:relative;z-index:2}
+
+@media(max-width:900px){
+  .site-header{height:76px}
+  .brand-emblem{width:38px;height:38px}
+  .brand-top{font-size:16px}.brand-bottom{font-size:13px}
+  .agro-landscape{min-height:430px}
+  .agro-landscape .n3{left:39%}
+}
+
+@media(max-width:600px){
+  .site-header{padding-inline:18px}
+  .brand-lockup{min-width:0}.brand-emblem{width:36px;height:36px}.brand-top{font-size:14px}.brand-bottom{font-size:12px}
+  .main-nav{gap:12px}.main-nav>a:not(.header-contact){display:none}.header-contact{padding:9px 12px}
+  .agro-landscape{min-height:390px;border-radius:18px}
+  .visual-label{left:16px;top:16px;width:calc(100% - 32px)}
+  .agro-landscape .node{font-size:7px;padding:7px 9px}
+  .agro-landscape .n1{left:5%;bottom:6%}.agro-landscape .n2{right:5%;top:43%}.agro-landscape .n3{left:35%;bottom:18%}.agro-landscape .n4{right:5%;bottom:6%}
+  .service-list article{grid-template-columns:52px 1fr 24px}
+  .service-list article>p{grid-column:2/4}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .primary,.phone,.case-grid article,.service-list article:after,.header-contact{transition:none!important}
+}

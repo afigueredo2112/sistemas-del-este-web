@@ -1,4 +1,5 @@
 import './globals.css';
+import './visual-polish.css';
 
 export const metadata = {
   title: 'Sistemas del Este | Tecnología para el campo y la ciudad',
