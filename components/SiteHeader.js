@@ -3,9 +3,12 @@ import Link from 'next/link';
 export default function SiteHeader({ tone = 'base' }) {
   return (
     <header className={`site-header ${tone}`}>
-      <Link href="/" className="brand-wordmark" aria-label="Sistemas del Este - Inicio">
-        <span className="brand-top">SISTEMAS</span>
-        <span className="brand-bottom">DEL ESTE</span>
+      <Link href="/" className="brand-lockup" aria-label="Sistemas del Este - Inicio">
+        <img className="brand-emblem" src="/brand/logo-emblema.png" alt="" aria-hidden="true" />
+        <span className="brand-wordmark">
+          <span className="brand-top">SISTEMAS</span>
+          <span className="brand-bottom">DEL ESTE</span>
+        </span>
       </Link>
       <nav className="main-nav" aria-label="Navegación principal">
         <Link href="/agro">Agro</Link>
