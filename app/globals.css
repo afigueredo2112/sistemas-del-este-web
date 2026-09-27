@@ -471,3 +471,13 @@ h2 { letter-spacing: -1.5px; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { animation: none !important; }
 }
+
+
+/* ---------- Mi Sistema entry ---------- */
+.platform-link { display:inline-flex; align-items:center; gap:7px; }
+.platform-link svg { width:15px; height:15px; }
+@media (max-width:720px) {
+  .main-nav > a:not(.header-contact):not(.platform-link) { display:none; }
+  .platform-link { color:var(--green) !important; }
+  .platform-link svg { display:none; }
+}
