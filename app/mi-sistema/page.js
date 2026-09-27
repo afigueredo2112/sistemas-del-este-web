@@ -1,4 +1,4 @@
-import { getEstablishment } from '../../lib/mi-sistema/provider';
+import { loadEstablishmentDashboard } from '../../services/mi-sistema/establishmentService';
 import MiSistemaDashboard from '../../components/mi-sistema/MiSistemaDashboard';
 
 export const metadata = {
@@ -7,6 +7,6 @@ export const metadata = {
 };
 
 export default async function MiSistemaPage() {
-  const establishment = await getEstablishment();
+  const establishment = await loadEstablishmentDashboard();
   return <MiSistemaDashboard initialData={establishment} />;
 }
