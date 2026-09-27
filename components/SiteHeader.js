@@ -10,6 +10,7 @@ export default function SiteHeader({ tone = 'base' }) {
       <nav className="main-nav" aria-label="Navegación principal">
         <Link href="/agro">Agro</Link>
         <Link href="/ciudad">Ciudad</Link>
+        <Link href="/mi-sistema">Mi Sistema</Link>
         <a className="header-contact" href="https://wa.me/59898342839" target="_blank" rel="noreferrer">WhatsApp</a>
       </nav>
     </header>
