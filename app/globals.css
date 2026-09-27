@@ -494,3 +494,24 @@ h2 { letter-spacing: -1.5px; }
 .city-cta{background:var(--blue);color:#061922;padding:96px 0}.city-cta .kicker{color:#12465f}.city-cta h2{font-size:clamp(34px,4.4vw,56px);line-height:1.02;margin:0 0 18px}.city-cta p:not(.kicker){color:#0c4058;font-size:17px;line-height:1.6;max-width:560px}.city-cta .cta-icons li{background:rgba(6,25,34,.09);border-color:rgba(6,25,34,.2)}.city-cta .cta-icons svg{color:#061922}
 @media(max-width:960px){.city-solution-grid{grid-template-columns:1fr 1fr}.city-how ol{grid-template-columns:1fr 1fr;gap:38px}.city-how ol:before{display:none}.city-benefit-grid{grid-template-columns:1fr 1fr}.city-benefit-grid article:nth-child(2){border-right:0}.city-benefit-grid article:nth-child(-n+2){border-bottom:1px solid var(--line)}.city-integral-inner{grid-template-columns:1fr}.city-case-grid{grid-template-columns:1fr}}
 @media(max-width:720px){.city-statement,.city-solutions,.city-how,.city-benefits,.city-cases,.city-integral{padding:76px 0}.city-statement ul{flex-direction:column;gap:14px}.city-solution-grid{grid-template-columns:1fr}.city-solution{min-height:0}.city-how ol{grid-template-columns:1fr}.city-benefit-grid{grid-template-columns:1fr}.city-benefit-grid article{border-right:0;border-bottom:1px solid var(--line)}.city-case-grid{grid-template-columns:1fr}.city-system-map{min-height:300px}.city-cta{padding:76px 0}}
+
+
+/* Ciudad · narrativa visual por público */
+.city-statement-photo{position:relative;overflow:hidden;isolation:isolate;background:#071525;color:#fff}
+.city-statement-photo .city-statement-bg{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(4,16,30,.94) 0%,rgba(4,16,30,.82) 48%,rgba(4,16,30,.42) 100%),url('/images/home-ciudad.png') center 46%/cover no-repeat;transform:scale(1.015)}
+.city-statement-photo:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.28));pointer-events:none}
+.city-statement-photo h2,.city-statement-photo h2 span,.city-statement-photo p{color:#fff}
+.city-statement-photo .shell{position:relative}
+.city-audiences{padding-top:7rem;padding-bottom:7rem}
+.city-audience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:42px}
+.city-audience-grid article{position:relative;min-height:340px;border-radius:24px;overflow:hidden;background-size:cover;background-position:center;box-shadow:0 16px 45px rgba(8,25,43,.12);isolation:isolate}
+.city-audience-grid article:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,14,27,.04) 20%,rgba(3,14,27,.88) 100%)}
+.city-audience-grid article>div{position:absolute;left:0;right:0;bottom:0;padding:30px;color:white}
+.city-audience-grid small{font-weight:800;letter-spacing:.12em;color:#8ed8ff}
+.city-audience-grid h3{font-size:clamp(1.35rem,2vw,1.9rem);line-height:1.08;margin:9px 0 8px;max-width:470px;color:white}
+.city-audience-grid p{margin:0;max-width:470px;color:rgba(255,255,255,.82)}
+.city-audience-grid .aud-home{background-image:url('/images/home-ciudad.png')}
+.city-audience-grid .aud-shop{background-image:url('https://www.ipsecuritydepot.com/content/page-heroes/retail-camera-placement-guide.jpg')}
+.city-audience-grid .aud-office{background-image:url('https://images.unsplash.com/photo-1764588037085-a78240016f8b?auto=format&fit=crop&q=80&w=1800')}
+.city-audience-grid .aud-building{background-image:url('https://images1.apartments.com/i2/J3OQEy1FIu4RxvoAyvX2zpm6mo2ojHI9Oy6eGUKbTu0/111/la-dorelle-toronto-on-building-photo.jpg')}
+@media(max-width:760px){.city-audiences{padding-top:4.5rem;padding-bottom:4.5rem}.city-audience-grid{grid-template-columns:1fr}.city-audience-grid article{min-height:300px}.city-statement-photo .city-statement-bg{background-position:62% center}}
