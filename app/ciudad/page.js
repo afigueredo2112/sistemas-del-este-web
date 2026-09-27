@@ -33,7 +33,17 @@ export default function CiudadPage(){return <main className="city-page">
  </section>
  <section className="city-strip"><ul className="shell">{strip.map(({icon:Icon,label})=><li key={label}><Icon strokeWidth={1.5}/>{label}</li>)}</ul></section>
 
- <section className="city-statement"><div className="shell"><p className="kicker blue">UNA IDEA SIMPLE</p><h2>No empezamos por venderte un equipo.<br/><span>Empezamos por lo que necesitás resolver.</span></h2><p>Puede ser una cámara, una zona sin Wi‑Fi o una red completa. Relevamos el problema y combinamos la tecnología necesaria para dejar una solución funcionando.</p><ul><li><Search/>Entender</li><li><PenTool/>Diseñar</li><li><Settings2/>Integrar</li></ul></div></section>
+ <section className="city-statement city-statement-photo"><div className="city-statement-bg" aria-hidden="true"/><div className="shell"><p className="kicker blue">UNA IDEA SIMPLE</p><h2>No empezamos por venderte un equipo.<br/><span>Empezamos por lo que necesitás resolver.</span></h2><p>Puede ser una cámara, una zona sin Wi‑Fi o una red completa. Relevamos el problema y combinamos la tecnología necesaria para dejar una solución funcionando.</p><ul><li><Search/>Entender</li><li><PenTool/>Diseñar</li><li><Settings2/>Integrar</li></ul></div></section>
+
+ <section className="city-audiences shell">
+  <div className="section-head city-head"><div><p className="kicker blue">TECNOLOGÍA DONDE LA NECESITÁS</p><h2>De tu casa a tu empresa.<br/><span>Diseñamos para cada espacio.</span></h2></div><p>La solución cambia según el lugar, el uso y las personas. Por eso partimos del entorno real antes de elegir la tecnología.</p></div>
+  <div className="city-audience-grid">
+   <article className="aud-home"><div><small>HOGARES Y RESIDENCIAS</small><h3>Seguridad, Wi‑Fi y control sin complicaciones.</h3><p>Cobertura pensada para vivir tranquilo y conectado.</p></div></article>
+   <article className="aud-shop"><div><small>COMERCIOS</small><h3>Tu negocio conectado y protegido.</h3><p>Cámaras, red y acceso remoto para el día a día.</p></div></article>
+   <article className="aud-office"><div><small>EMPRESAS Y OFICINAS</small><h3>Infraestructura que acompaña el trabajo.</h3><p>Redes ordenadas, Wi‑Fi estable y una base preparada para crecer.</p></div></article>
+   <article className="aud-building"><div><small>EDIFICIOS Y ESPACIOS COMUNES</small><h3>Accesos y conectividad compartida.</h3><p>Soluciones para edificios, complejos, barrios y áreas comunes.</p></div></article>
+  </div>
+ </section>
 
  <CitySolutions/>
 
