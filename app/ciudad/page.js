@@ -47,7 +47,7 @@ export default function CiudadPage(){return <main className="city-page">
 
  <CitySolutions/>
 
- <section className="city-how"><div className="shell"><p className="kicker blue">SERVICIO INTEGRAL</p><h2>Del problema a una solución<br/>funcionando.</h2><ol>{steps.map(({n,icon:Icon,title,desc})=><li key={n}><span><Icon strokeWidth={1.5}/></span><b>{n}</b><h3>{title}</h3><p>{desc}</p></li>)}</ol></div></section>
+ <section className="city-how"><div className="shell"><p className="kicker blue">SERVICIO INTEGRAL</p><h2>Del problema a una solución<br/>funcionando.</h2><ol>{steps.map(({n,icon:Icon,title,desc})=><li key={n}><div className="city-step-marker"><span><Icon strokeWidth={1.5}/></span><b>{n}</b></div><div className="city-step-copy"><h3>{title}</h3><p>{desc}</p></div></li>)}</ol></div></section>
 
  <CityBenefits/>
  <CityScenarios/>
