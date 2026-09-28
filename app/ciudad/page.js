@@ -7,6 +7,8 @@ import CityBenefits from '../../components/ciudad/CityBenefits';
 import CityScenarios from '../../components/ciudad/CityScenarios';
 import SiteFooter, { AboutSection } from '../../components/SiteFooter';
 
+export const metadata = { title: 'Ciudad | Seguridad, redes y conectividad', description: 'Cámaras, Wi-Fi, redes, enlaces y control de acceso para hogares, comercios y empresas en Maldonado y Zona Este.', openGraph: { title: 'Ciudad | Seguridad, redes y conectividad', description: 'Cámaras, Wi-Fi, redes, enlaces y control de acceso para hogares, comercios y empresas en Maldonado y Zona Este.', images: ['/images/home-ciudad.png'] } };
+
 const indicators=[
  {x:48,y:38,label:'Cámara',value:'EN LÍNEA',icon:Cctv,side:'left'},
  {x:63,y:55,label:'Wi‑Fi',value:'CONECTADO',icon:Wifi,side:'left',hub:true},
