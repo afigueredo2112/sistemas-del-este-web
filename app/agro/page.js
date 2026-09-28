@@ -11,6 +11,8 @@ import Benefits from '../../components/agro/Benefits';
 import Scenarios from '../../components/agro/Scenarios';
 import SiteFooter, { AboutSection } from '../../components/SiteFooter';
 
+export const metadata = { title: 'Agro | Automatización y tecnología para el campo', description: 'Riego, sensores, monitoreo, conectividad y automatización para productores y establecimientos rurales en Uruguay.', openGraph: { title: 'Agro | Automatización y tecnología para el campo', description: 'Riego, sensores, monitoreo, conectividad y automatización para productores y establecimientos rurales en Uruguay.', images: ['/images/agro-hero.png'] } };
+
 const heroIndicators = [
   { x: 15, y: 50, label: 'Tanque', value: '72%', icon: Gauge },
   { x: 43, y: 86, label: 'Válvula', value: 'ACTIVA', icon: Droplets },
