@@ -525,10 +525,10 @@ h2 { letter-spacing: -1.5px; }
 .city-solution:hover .city-sol-visual:before{transform:scale(1.045)}
 .city-sol-visual.visual-security:before{background-image:url('/images/home-ciudad.png')}
 .city-sol-visual.visual-wifi:before{background-image:linear-gradient(135deg,rgba(8,42,57,.18),rgba(4,18,25,.12)),url('/images/home-ciudad.png');background-position:68% center}
-.city-sol-visual.visual-network:before{background-image:radial-gradient(circle at 70% 35%,rgba(40,167,232,.24),transparent 30%),linear-gradient(135deg,#0b3544,#06171f)}
-.city-sol-visual.visual-link:before{background-image:linear-gradient(135deg,rgba(40,167,232,.15),transparent),radial-gradient(circle at 25% 50%,rgba(40,167,232,.25),transparent 18%),radial-gradient(circle at 78% 45%,rgba(40,167,232,.22),transparent 18%),linear-gradient(135deg,#082734,#041219)}
-.city-sol-visual.visual-access:before{background-image:linear-gradient(120deg,rgba(40,167,232,.12),transparent 50%),url('/images/home-ciudad.png');background-position:35% 60%}
-.city-sol-visual.visual-support:before{background-image:radial-gradient(circle at 65% 40%,rgba(40,167,232,.24),transparent 28%),linear-gradient(145deg,#0a3140,#051820)}
+.city-sol-visual.visual-network:before{background-image:linear-gradient(rgba(4,18,25,.08),rgba(4,18,25,.16)),url('https://ccasecure.com/images/cca-structured-cable.webp')}
+.city-sol-visual.visual-link:before{background-image:linear-gradient(rgba(4,18,25,.08),rgba(4,18,25,.2)),url('https://d1okf4ta8xniw3.cloudfront.net/original/3X/3/4/3496ca7d89b7b6f612df4cd3f6f4bb36c7e64ab7.jpeg');background-position:center 42%}
+.city-sol-visual.visual-access:before{background-image:linear-gradient(120deg,rgba(4,18,25,.08),rgba(4,18,25,.16)),url('https://fastechltd.co.uk/wp-content/uploads/2025/04/How-to-install-access-control-system-body-image.jpg');background-position:center}
+.city-sol-visual.visual-support:before{background-image:linear-gradient(rgba(4,18,25,.06),rgba(4,18,25,.18)),url('https://www.agsi.fr/docs/services/conseils-vente/mcith/mcith_620x563_vente-materiel-equipement-informatique-val-oise-95.webp');background-position:center}
 .city-sol-visual-icon{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:rgba(4,18,25,.72);border:1px solid rgba(126,211,255,.3);backdrop-filter:blur(8px)}
 .city-sol-visual-icon svg{width:25px;height:25px;color:#68caff}
 .city-sol-visual small{font-size:8px;font-weight:800;letter-spacing:1.2px;color:#c8e9f8;margin-bottom:5px}
