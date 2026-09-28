@@ -1,0 +1,1 @@
+export default function sitemap(){const base='https://sistemasdeleste.com.uy';return [{url:base,lastModified:new Date(),changeFrequency:'monthly',priority:1},{url:`${base}/agro`,lastModified:new Date(),changeFrequency:'monthly',priority:.9},{url:`${base}/ciudad`,lastModified:new Date(),changeFrequency:'monthly',priority:.9}];}
