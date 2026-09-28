@@ -1,6 +1,7 @@
 import { Cctv, Droplets, Network, RadioTower, Settings2, Waves, Wifi, Wrench, Gauge } from 'lucide-react';
 import SiteHeader from '../components/SiteHeader';
 import Portal from '../components/home/Portal';
+import SiteFooter, { AboutSection } from '../components/SiteFooter';
 
 const capabilities = [
   { icon: Droplets, label: 'Riego' },
@@ -74,7 +75,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <footer className="simple-footer shell"><span>Sistemas del Este · 2026</span><span>098 342 839</span><span>Maldonado y Zona Este</span></footer>
+      <AboutSection />
+      <SiteFooter />
     </main>
   );
 }
