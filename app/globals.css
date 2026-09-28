@@ -561,3 +561,18 @@ h2 { letter-spacing: -1.5px; }
  .city-step-copy{padding-top:4px}.city-step-copy h3{font-size:22px;margin:0 0 8px}.city-step-copy p{font-size:14px;line-height:1.65}
  .city-scene{height:145px}.city-case-text{padding:25px 26px 28px}
 }
+
+
+/* Empresa + contacto */
+.about-sde{padding:96px 0;background:#061820;border-top:1px solid var(--line)}
+.about-sde-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.about-sde h2{font-size:clamp(34px,4.2vw,54px);line-height:1.04;margin:0}.about-sde h2 span{color:var(--green)}
+.city-page .about-sde h2 span{color:var(--blue)}
+.about-sde-copy>p{color:var(--muted);font-size:16px;line-height:1.75;margin:0 0 16px}
+.about-sde-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.about-sde-tags span{border:1px solid var(--line-strong);border-radius:99px;padding:8px 11px;font-size:9px;font-weight:800;letter-spacing:1px;color:#aac0c6}
+.site-footer{background:#031015;border-top:1px solid var(--line);padding:58px 0 22px}
+.site-footer-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+.footer-brand strong{font:800 24px/0.82 var(--display);letter-spacing:1px}.footer-brand strong span{color:#83969b}.footer-brand p{color:#70878e;font-size:12px;margin:14px 0 0}
+.footer-contact{display:grid;grid-template-columns:1fr 1fr;gap:13px 24px}.footer-contact a,.footer-contact>span{display:flex;align-items:center;gap:9px;color:#9eb1b7;font-size:12px;min-width:0}.footer-contact a{transition:color .2s}.footer-contact a:hover{color:#fff}.footer-contact svg{width:17px;height:17px;flex:0 0 auto;color:var(--green)}.city-page .footer-contact svg{color:var(--blue)}
+.footer-bottom{border-top:1px solid var(--line);margin-top:42px;padding-top:20px;display:flex;justify-content:space-between;color:#536a71;font-size:9px;letter-spacing:1px}
+@media(max-width:720px){.about-sde{padding:72px 0}.about-sde-inner,.site-footer-inner{grid-template-columns:1fr;gap:34px}.about-sde-copy>p{font-size:15px}.footer-contact{grid-template-columns:1fr;gap:16px}.footer-contact a,.footer-contact>span{font-size:13px}.footer-bottom{flex-direction:column;gap:8px}.site-footer{padding-top:46px}}
