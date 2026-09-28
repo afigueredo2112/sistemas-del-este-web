@@ -9,6 +9,7 @@ import Solutions from '../../components/agro/Solutions';
 import MiCampo from '../../components/agro/MiCampo';
 import Benefits from '../../components/agro/Benefits';
 import Scenarios from '../../components/agro/Scenarios';
+import SiteFooter, { AboutSection } from '../../components/SiteFooter';
 
 const heroIndicators = [
   { x: 15, y: 50, label: 'Tanque', value: '72%', icon: Gauge },
@@ -141,7 +142,8 @@ export default function AgroPage() {
           </ul>
         </div>
       </section>
-      <footer className="simple-footer shell"><span>Sistemas del Este · 2026</span><span>098 342 839</span><span>San Carlos · Maldonado · Zona Este</span></footer>
+      <AboutSection />
+      <SiteFooter />
     </main>
   );
 }
