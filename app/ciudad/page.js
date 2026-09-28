@@ -5,6 +5,7 @@ import Indicator, { IndicatorLines } from '../../components/Indicator';
 import CitySolutions from '../../components/ciudad/CitySolutions';
 import CityBenefits from '../../components/ciudad/CityBenefits';
 import CityScenarios from '../../components/ciudad/CityScenarios';
+import SiteFooter, { AboutSection } from '../../components/SiteFooter';
 
 const indicators=[
  {x:48,y:38,label:'Cámara',value:'EN LÍNEA',icon:Cctv,side:'left'},
@@ -55,5 +56,6 @@ export default function CiudadPage(){return <main className="city-page">
  <section className="city-integral"><div className="shell city-integral-inner"><div><p className="kicker blue">UNA SOLA MIRADA</p><h2>Tu tecnología debería trabajar como un sistema.</h2><p>Cámaras, conectividad, red y control pueden formar parte de una misma solución. Nosotros nos ocupamos de diseñar cómo encajan.</p></div><div className="city-system-map"><span><Cctv/><small>SEGURIDAD</small></span><span><Wifi/><small>WI‑FI</small></span><strong>SdE</strong><span><Network/><small>RED</small></span><span><Cable/><small>ENLACES</small></span></div></div></section>
 
  <section className="city-cta"><div className="shell cta-inner"><div><p className="kicker">SISTEMAS DEL ESTE · CIUDAD</p><h2>¿Qué problema tecnológico<br/>querés dejar resuelto?</h2><p>Contanos qué necesitás mejorar en tu casa, comercio o empresa. Nosotros pensamos la solución completa.</p><a className="primary dark-btn" href="https://wa.me/59898342839?text=Hola%2C%20quiero%20contarles%20una%20necesidad%20para%20mi%20casa%20o%20empresa">Hablar por WhatsApp <MessageCircle strokeWidth={2}/></a></div><ul className="cta-icons">{[Cctv,Wifi,Network,KeyRound,Headset,Settings2].map((Icon,i)=><li key={i}><Icon strokeWidth={1.5}/></li>)}</ul></div></section>
- <footer className="simple-footer shell"><span>Sistemas del Este · 2026</span><span>098 342 839</span><span>San Carlos · Maldonado · Zona Este</span></footer>
+ <AboutSection />
+ <SiteFooter />
  </main>}
