@@ -24,7 +24,7 @@ export default function MiSistemaDashboard({ initialData }) {
   return (
     <main className={styles.app}>
       <header className={styles.topbar}>
-        <Link href="/" className={styles.brand}><span>SISTEMAS</span><b>DEL ESTE</b></Link>
+        <Link href="/" className={styles.brand}><img src="/brand/logo-emblema.png" alt="" aria-hidden="true" /><span><span>SISTEMAS</span><b>DEL ESTE</b></span></Link>
         <div className={styles.product}>MI SISTEMA <span>DEMO</span></div>
       </header>
 
