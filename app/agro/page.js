@@ -24,7 +24,7 @@ export default function AgroPage(){
     <p className="kicker green">SISTEMAS DEL ESTE · AGRO</p>
     <h1>Control y tecnología <span>para el campo.</span></h1>
     <p className="lead">Medí, controlá y automatizá lo que pasa en tu establecimiento. Integramos riego, agua, sensores, conectividad y seguridad en soluciones pensadas para problemas reales.</p>
-    <div className="hero-actions"><a className="primary green-btn" href="https://wa.me/59898342839?text=Hola%2C%20quiero%20consultar%20por%20una%20soluci%C3%B3n%20para%20el%20campo">Contanos qué necesitás</a><a className="text-link" href="#soluciones">Ver soluciones ↓</a></div>
+    <div className="hero-actions"><a className="primary green-btn" href="https://wa.me/59892745299?text=Hola%2C%20quiero%20consultar%20por%20una%20soluci%C3%B3n%20para%20el%20campo">Contanos qué necesitás</a><a className="text-link" href="#soluciones">Ver soluciones ↓</a></div>
     <div className="hero-proof"><span>MODULAR</span><span>REMOTO</span><span>ESCALABLE</span><span>SOPORTE LOCAL</span></div>
    </div>
    <div className="hero-visual agro-landscape" aria-label="Representación de un establecimiento conectado">
@@ -51,7 +51,7 @@ export default function AgroPage(){
 
   <section className="cases shell"><p className="kicker green">PROBLEMAS REALES</p><h2>¿Te pasa algo de esto?</h2><div className="case-grid">{cases.map(([t,d])=><article key={t}><i></i><h3>{t}</h3><p>{d}</p></article>)}</div></section>
 
-  <section className="agro-cta"><div className="shell"><p className="kicker">SISTEMAS DEL ESTE · AGRO</p><h2>¿Qué parte de tu campo<br/>podríamos hacer más simple?</h2><p>Contanos qué querés medir, controlar o automatizar. Nosotros pensamos cómo resolverlo.</p><a className="primary dark-btn" href="https://wa.me/59898342839?text=Hola%2C%20quiero%20contarles%20una%20necesidad%20de%20mi%20campo">Hablar por WhatsApp →</a></div></section>
-  <footer className="simple-footer shell"><span>Sistemas del Este · 2026</span><span>098 342 839</span><span>San Carlos · Maldonado · Zona Este</span></footer>
+  <section className="agro-cta"><div className="shell"><p className="kicker">SISTEMAS DEL ESTE · AGRO</p><h2>¿Qué parte de tu campo<br/>podríamos hacer más simple?</h2><p>Contanos qué querés medir, controlar o automatizar. Nosotros pensamos cómo resolverlo.</p><a className="primary dark-btn" href="https://wa.me/59892745299?text=Hola%2C%20quiero%20contarles%20una%20necesidad%20de%20mi%20campo">Hablar por WhatsApp →</a></div></section>
+  <footer className="simple-footer shell"><span>Sistemas del Este · 2026</span><span>092 745 299</span><span>San Carlos · Maldonado · Zona Este</span></footer>
  </main>
 }

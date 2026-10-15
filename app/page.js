@@ -36,7 +36,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <footer className="simple-footer shell"><span>Sistemas del Este · 2026</span><span>098 342 839</span><span>Maldonado y Zona Este</span></footer>
+      <footer className="simple-footer shell"><span>Sistemas del Este · 2026</span><span>092 745 299</span><span>Maldonado y Zona Este</span></footer>
     </main>
   );
 }
