@@ -45,7 +45,7 @@ export default function AgroPage() {
           <h1>Control y tecnología <span>para el campo.</span></h1>
           <p className="lead">Medí, controlá y automatizá lo que pasa en tu establecimiento. Integramos riego, agua, sensores, conectividad y seguridad en soluciones pensadas para problemas reales.</p>
           <div className="hero-actions">
-            <a className="primary green-btn" href="https://wa.me/59898342839?text=Hola%2C%20quiero%20consultar%20por%20una%20soluci%C3%B3n%20para%20el%20campo">
+            <a className="primary green-btn" href="https://wa.me/59892745299?text=Hola%2C%20quiero%20consultar%20por%20una%20soluci%C3%B3n%20para%20el%20campo">
               Contanos qué necesitás <ArrowRight aria-hidden="true" strokeWidth={2} />
             </a>
             <a className="text-link" href="#soluciones">Ver soluciones <ArrowDown aria-hidden="true" strokeWidth={2} /></a>
@@ -135,7 +135,7 @@ export default function AgroPage() {
             <p className="kicker">SISTEMAS DEL ESTE · AGRO</p>
             <h2>¿Qué parte de tu campo<br />podríamos hacer más simple?</h2>
             <p>Contanos qué querés medir, controlar o automatizar. Nosotros pensamos cómo resolverlo.</p>
-            <a className="primary dark-btn" href="https://wa.me/59898342839?text=Hola%2C%20quiero%20contarles%20una%20necesidad%20de%20mi%20campo">
+            <a className="primary dark-btn" href="https://wa.me/59892745299?text=Hola%2C%20quiero%20contarles%20una%20necesidad%20de%20mi%20campo">
               Hablar por WhatsApp <ArrowRight aria-hidden="true" strokeWidth={2} />
             </a>
           </div>
