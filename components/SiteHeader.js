@@ -15,7 +15,7 @@ export default function SiteHeader({ tone = 'base' }) {
         <Link href="/agro" className={tone === 'agro' ? 'is-active' : undefined}>Agro</Link>
         <Link href="/ciudad" className={tone === 'city' ? 'is-active' : undefined}>Ciudad</Link>
         <Link href="/mi-sistema" className="platform-link"><LayoutDashboard aria-hidden="true" strokeWidth={1.75} />Mi Sistema</Link>
-        <a className="header-contact" href="https://wa.me/59898342839" target="_blank" rel="noreferrer">
+        <a className="header-contact" href="https://wa.me/59892745299" target="_blank" rel="noreferrer">
           <MessageCircle aria-hidden="true" strokeWidth={1.75} />WhatsApp
         </a>
       </nav>
