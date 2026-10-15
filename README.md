@@ -153,4 +153,4 @@ La documentación de negocio, decisiones de diseño, posicionamiento, roadmap y 
 
 **Sistemas del Este**  
 San Carlos, Maldonado — Uruguay  
-WhatsApp: +598 98 342 839
+WhatsApp: +598 92 745 299
