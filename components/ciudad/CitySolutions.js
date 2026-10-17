@@ -14,6 +14,6 @@ export default function CitySolutions(){return <section id="soluciones-ciudad" c
    <div className={'city-sol-visual '+visual}><div className="city-sol-visual-icon"><Icon strokeWidth={1.35}/></div><small>{eyebrow}</small><span>{n}</span></div>
    <div className="city-sol-body"><h3>{title}</h3><p>{desc}</p>
    <ul>{keys.map(k=><li key={k}>{k}</li>)}</ul>
-   <a href={`https://wa.me/59898342839?text=${encodeURIComponent('Hola, quiero consultar por '+title.toLowerCase())}`}>Consultar <ArrowUpRight strokeWidth={2}/></a></div>
+   <a href={`https://wa.me/59892745299?text=${encodeURIComponent('Hola, quiero consultar por '+title.toLowerCase())}`}>Consultar <ArrowUpRight strokeWidth={2}/></a></div>
  </article>)}</div>
  </section>}
