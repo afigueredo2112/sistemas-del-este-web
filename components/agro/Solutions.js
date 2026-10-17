@@ -83,7 +83,7 @@ export default function Solutions() {
               </ul>
               <a
                 className="sol-link"
-                href={`https://wa.me/59898342839?text=${encodeURIComponent(`Hola, quiero consultar por ${title.toLowerCase()}`)}`}
+                href={`https://wa.me/59892745299?text=${encodeURIComponent(`Hola, quiero consultar por ${title.toLowerCase()}`)}`}
               >
                 Consultar <ArrowUpRight aria-hidden="true" strokeWidth={2} />
               </a>
