@@ -5,7 +5,11 @@ import './globals.css';
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-display' });
 
-const imageBase = process.env.VERCEL_ENV === 'preview' && process.env.VERCEL_URL\n  ? `https://${process.env.VERCEL_URL}`\n  : 'https://sistemasdeleste.com.uy';\n\nexport const metadata = {
+const imageBase = process.env.VERCEL_ENV === 'preview' && process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : 'https://sistemasdeleste.com.uy';
+
+export const metadata = {
   metadataBase: new URL('https://sistemasdeleste.com.uy'),
   title: { default: 'Sistemas del Este | Tecnología para el campo y la ciudad', template: '%s | Sistemas del Este' },
   description: 'Automatización, conectividad, monitoreo, redes y seguridad para el campo, hogares y empresas en Maldonado y Zona Este.',
