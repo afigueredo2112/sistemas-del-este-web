@@ -5,7 +5,7 @@ import './globals.css';
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-display' });
 
-export const metadata = {
+const imageBase = process.env.VERCEL_ENV === 'preview' && process.env.VERCEL_URL\n  ? `https://${process.env.VERCEL_URL}`\n  : 'https://sistemasdeleste.com.uy';\n\nexport const metadata = {
   metadataBase: new URL('https://sistemasdeleste.com.uy'),
   title: { default: 'Sistemas del Este | Tecnología para el campo y la ciudad', template: '%s | Sistemas del Este' },
   description: 'Automatización, conectividad, monitoreo, redes y seguridad para el campo, hogares y empresas en Maldonado y Zona Este.',
@@ -16,9 +16,9 @@ export const metadata = {
     title: 'Sistemas del Este | Ciudad & Agro',
     url: 'https://sistemasdeleste.com.uy',
     description: 'Soluciones tecnológicas para hogares, empresas y entornos rurales.',
-    images: [{ url: 'https://sistemasdeleste.com.uy/api/og', width: 1200, height: 630, alt: 'Sistemas del Este | Ciudad y Agro', type: 'image/png' }]
+    images: [{ url: `${imageBase}/api/og`, width: 1200, height: 630, alt: 'Sistemas del Este | Ciudad y Agro', type: 'image/png' }]
   },
-  twitter: { card: 'summary_large_image', title: 'Sistemas del Este | Ciudad & Agro', description: 'Soluciones tecnológicas para hogares, empresas y entornos rurales.', images: ['https://sistemasdeleste.com.uy/api/og'] },
+  twitter: { card: 'summary_large_image', title: 'Sistemas del Este | Ciudad & Agro', description: 'Soluciones tecnológicas para hogares, empresas y entornos rurales.', images: [`${imageBase}/api/og`] },
   robots: { index: true, follow: true }
 };
 
