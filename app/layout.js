@@ -5,6 +5,10 @@ import './globals.css';
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-display' });
 
+const imageBase = process.env.VERCEL_ENV === 'preview' && process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : 'https://sistemasdeleste.com.uy';
+
 export const metadata = {
   metadataBase: new URL('https://sistemasdeleste.com.uy'),
   title: { default: 'Sistemas del Este | Tecnología para el campo y la ciudad', template: '%s | Sistemas del Este' },
@@ -13,11 +17,12 @@ export const metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website', locale: 'es_UY', siteName: 'Sistemas del Este',
-    title: 'Sistemas del Este | Tecnología aplicada a problemas reales',
-    description: 'Automatización, conectividad, monitoreo y seguridad para el campo, hogares y empresas.',
-    images: [{ url: '/images/home-agro.png', width: 1200, height: 630, alt: 'Sistemas del Este' }]
+    title: 'Sistemas del Este | Ciudad & Agro',
+    url: 'https://sistemasdeleste.com.uy',
+    description: 'Soluciones tecnológicas para hogares, empresas y entornos rurales.',
+    images: [{ url: `${imageBase}/api/og`, width: 1200, height: 630, alt: 'Sistemas del Este | Ciudad y Agro', type: 'image/png' }]
   },
-  twitter: { card: 'summary_large_image', title: 'Sistemas del Este', description: 'Tecnología aplicada a problemas reales.', images: ['/images/home-agro.png'] },
+  twitter: { card: 'summary_large_image', title: 'Sistemas del Este | Ciudad & Agro', description: 'Soluciones tecnológicas para hogares, empresas y entornos rurales.', images: [`${imageBase}/api/og`] },
   robots: { index: true, follow: true }
 };
 
